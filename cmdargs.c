@@ -6,12 +6,12 @@ int main(int argc, char *argv[], char *envp[]) {
 	int i;
 	printf("Количество аргументов: %d", argc);
 	if (argc<1){
-		printf("\n");
+		printf("Ошибка\n");
 		exit(-1);
 	}
 	else if (argc==1){
 		while (envp[i]!=NULL){
-			print("\n", envp[i]);
+			printf("%s\n", envp[i]);
 			i++;
 		}
 	}
