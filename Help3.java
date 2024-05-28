@@ -13,8 +13,8 @@ class  Help3 {
 			System.out.println(" 3. for");
 			System.out.println(" 4. while");
 			System.out.println(" 5. do-while");
-      System.out.println(" 6. break");
-      System.out.println(" 7. continue");
+      			System.out.println(" 6. break");
+      			System.out.println(" 7. continue");
 			System.out.println("q - выход из программы");
 			System.out.println("Выберите подраздел: ");
 			choice = (char) System.in.read();
@@ -55,15 +55,13 @@ class  Help3 {
                                 System.out.println("Цикл do-while:\n");
                                 System.out.println("if {");
                                 System.out.println(" операторы;");
-      case '6':
+      			case '6':
                                 System.out.println("Инструкция break:\n");
                                 System.out.println("break; или break метка;");
                                 break;
-      case '7':
+      			case '7':
                                 System.out.println("Инструкция continue:\n");
                                 System.out.println("Continue; или continue метка;");
-                                break;
-				System.out.println("} while(условие);");
                                 break;
 		}
 		System.out.println();
