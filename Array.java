@@ -20,7 +20,7 @@ class Array {
 		System.out.println("Минимальное значение в массиве: " + min + "\nМаксимальное значение в массиве: " + max);
 		//Пузырьковая сортировка массива nums2
 		int a, b, t;
-		int size = 10;
+		int size = nums2.length;
 		System.out.println("Массив до сортировки:");
 		for(i = 0; i < size; i++)
 			System.out.println(" " + nums2[i]);
