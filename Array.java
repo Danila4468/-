@@ -8,11 +8,12 @@ class Array {
 		for(i = 0; i < 10; i++)
                         System.out.println("Элемент [" + i + "]: " + nums[i]);
 		// Альтернативный способ инициализации массива
-		int nums2[] = {99, -55, -245, 311, -50, 18, 90, 84, -4, 2};
+		int nums2[] = {99, -55, -245, 311, -50, 18, 90, 84, -4, 2, 5, 35, 57, -347, 1111, 45, -98, 1};
 
 		int min, max;
+		// Поиск минимального и максимального
 		min = max = nums2[0];
-		for(i = 1; i < 10; i++) {
+		for(i = 1; i < nums2.length; i++) {
 			if(nums2[i] < min) min = nums2[i];
 			if(nums2[i] > max) max = nums2[i];
 		}
@@ -36,5 +37,11 @@ class Array {
 		System.out.println("Массив после сортировки:");
                 for(i = 0; i < size; i++)
                         System.out.println(" " + nums2[i]);
+
+		// Использоване перемнной экземпляра length
+		System.out.println("Размер nums: " + nums.length);
+		System.out.println("Размер nums2: " + nums2.length);
+		for (i = 0; i < nums2.length; i++)
+			System.out.println(nums2[i]);
 	}
 }
