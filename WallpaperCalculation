@@ -1,0 +1,28 @@
+abstract class WallpaperCalculation {
+    abstract int calculateRollsRequired(double area);
+}
+
+class WallpaperRollsCalculation extends WallpaperCalculation {
+    private static final double WALLPAPER_LENGTH = 5.0; // meters
+    private static final double WALLPAPER_WIDTH = 0.75; // meters
+
+    int calculateRollsRequired(double area) {
+        double wallpaperAreaPerRoll = WALLPAPER_LENGTH * WALLPAPER_WIDTH;
+        int rollsRequired = (int) Math.ceil(area / wallpaperAreaPerRoll);
+        return rollsRequired;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the room area (in square meters):");
+        double area = scanner.nextDouble();
+
+        WallpaperCalculation calculation = new WallpaperRollsCalculation();
+        int rollsRequired = calculation.calculateRollsRequired(area);
+
+        System.out.println("For an area of " + area + " sq.m, you will need " + rollsRequired + " wallpaper roll(s).");
+    }
+}
